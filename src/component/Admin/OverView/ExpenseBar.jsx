@@ -11,7 +11,7 @@ const ExpenseBar = ({ spent, remaining, total }) => {
       </div>
       <div className="bg-gray-300 rounded-lg overflow-hidden h-4">
         <div
-          className="bg-[#2626d8] h-full"
+          className="bg-[#a6f9bd] h-full"
           style={{ width: `${spentPercentage}%` }}
         ></div>
       </div>

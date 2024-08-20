@@ -5,7 +5,7 @@ import BarCharts from "./BarChat";
 import { IoStatsChartSharp } from "react-icons/io5";
 import ExpenseBar from "./ExpenseBar";
 
-const Expense_OverView = () => {
+const ExpenseOverView = () => {
   const data = [
     { date: "2024-08-01", income: 150, profit: 80, expense: 100 },
     { date: "2024-08-02", income: 100, profit: 120, expense: 150 },
@@ -23,7 +23,7 @@ const Expense_OverView = () => {
         <div className="flex gap-3 items-center justify-center ml-2  ">
           <div>
             <div className=" mt-3 mb-3 ">
-              <h1 className="text-2xl font-roboto font-bold">Hi,bwiza linda</h1>
+              <h1 className="text-2xl font-roboto text-[#144c90] font-bold">Hi,bwiza linda</h1>
               <p className="font-roboto">
                 Here's what happening with your money. Lets manage your expenses
               </p>
@@ -31,7 +31,7 @@ const Expense_OverView = () => {
             <div className="flex gap-3 ">
               <div className="flex flex-wrap gap-3">
                 <div className="w-60   h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f3f4f6] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -40,7 +40,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60  h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f3f4f6] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -49,7 +49,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60  h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f3f4f6] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -58,7 +58,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60   h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f3f4f6] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -132,4 +132,4 @@ const Expense_OverView = () => {
   );
 };
 
-export default Expense_OverView;
+export default ExpenseOverView;

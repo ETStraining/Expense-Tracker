@@ -14,12 +14,12 @@ import { NavLink } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#020725",
-    color: "#dfe1e4",
+    backgroundColor: "#000300",
+    color: "#a6f9bd",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    color:"#020725"
+    color:"#000300"
   },
 }));
 
@@ -38,8 +38,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const All_Income = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#020725]"> Income Overview</h1>
-     <NavLink to={"/add_income"}> <p className='text-[#dfe1e4] bg-[#020725]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300]"> Income Overview</h1>
+     <NavLink to={"/user_dashboard/add_income"}> <p className='text-[#dfe1e4] bg-[#000300]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
       </div>
       <div>
       <TableContainer component={Paper}>

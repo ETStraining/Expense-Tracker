@@ -13,12 +13,12 @@ import { IoMdAdd } from 'react-icons/io';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#020725",
-    color: "#dfe1e4",
+    backgroundColor: "#000300",
+    color: "#a6f9bd",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    color:"#020725"
+    color:"#000300"
   },
 }));
 
@@ -36,8 +36,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const All_Category = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#020725]"> Category Overview</h1>
-      <p className='bg-[#020725] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300]"> Category Overview</h1>
+      <p className='bg-[#000300] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
       </div>
       <div>
       <TableContainer component={Paper}>

@@ -4,7 +4,7 @@ import React from 'react';
 const AddUser = ()=>{
     return (
         <div className='-z-10 flex items-center justify-center mt-2'>
-    <div className=' flex items-center justify-center shadow w-96 border bg-[#f6f7f8] rounded-md text-[#020725]'>
+    <div className=' flex items-center justify-center shadow w-96 border bg-[#f6f7f8] rounded-md text-[#000300]'>
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 ,width:300 ,margin:5}}>
         <p className='mt-2 mb-2 text-2xl font-bold'>ADD USER</p>
            <FormControl fullWidth required variant="outlined">
@@ -16,7 +16,7 @@ const AddUser = ()=>{
                 value={name}
                 onChange={(e) => { setName(e.target.value) }}
                 label="text"
-                sx={{background:"#020725",color:"#dfe1e4",border:"#020725"}}
+                sx={{background:"#000300",color:"#dfe1e4",border:"#020725"}}
               />
             </FormControl>
             <FormControl fullWidth required variant="outlined">
@@ -28,7 +28,7 @@ const AddUser = ()=>{
                 // value={email}
                 // onChange={(e) => { setEmail(e.target.value) }}
                 label="Email"
-                sx={{background:"#020725",color:"#dfe1e4"}}
+                sx={{background:"#000300",color:"#dfe1e4"}}
               />
             </FormControl>
             <FormControl fullWidth required variant="outlined">
@@ -40,7 +40,7 @@ const AddUser = ()=>{
                 // value={phone}
                 // onChange={(e) => { setPhone(e.target.value) }}
                 label="Phone"
-                sx={{background:"#020725",color:"#dfe1e4"}}
+                sx={{background:"#000300",color:"#dfe1e4"}}
               />
             </FormControl>
     
@@ -53,12 +53,12 @@ const AddUser = ()=>{
             //     value={password}
             //    onChange={(e) => { setPassword(e.target.value) }}
                 label="depertment"
-                sx={{background:"#020725",color:"#dfe1e4"}}
+                sx={{background:"#000300",color:"#dfe1e4"}}
               />
             </FormControl>
          
             <FormControl>
-               <button type='submit' className='text-[#dfe1e4] bg-[#020725] p-2 rounded-md' variant='contained'>AddUser</button>
+               <button type='submit' className='text-[#] bg-[#000300] p-2 rounded-md' variant='contained'>AddUser</button>
             </FormControl>
            
           

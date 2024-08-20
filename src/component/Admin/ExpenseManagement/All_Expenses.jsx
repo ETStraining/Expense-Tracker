@@ -14,12 +14,12 @@ import { NavLink } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#020725",
-    color: "#dfe1e4",
+    backgroundColor: "#000300",
+    color: "#a6f9bd",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    color:"#020725"
+    color:"#000300"
   },
 }));
 
@@ -34,11 +34,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-const All_Expenses = () => {
+const AllExpenses = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#020725] text-3xl font-roboto"> Expenses Overview</h1>
-      <NavLink to={"/add_expense"}><p className='bg-[#020725] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300] text-3xl font-roboto"> Expenses Overview</h1>
+      <NavLink to={"/user_dashboard/add_expense"}><p className='bg-[#000300] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
       </NavLink>
       </div>
       <div>
@@ -64,7 +64,7 @@ const All_Expenses = () => {
               <StyledTableCell>Material</StyledTableCell>
               <StyledTableCell>
               <div className='flex gap-3'>
-               <p><MdModeEditOutline size={30}/></p>
+               <p><NavLink to={'/user_dashboard/update_expense'}><MdModeEditOutline size={30}/></NavLink></p>
                <p ><MdDelete size={30}/></p>
                
                </div>
@@ -121,4 +121,4 @@ const All_Expenses = () => {
   );
 };
 
-export default All_Expenses;
+export default AllExpenses;

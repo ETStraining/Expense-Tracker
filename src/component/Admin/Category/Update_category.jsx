@@ -1,7 +1,7 @@
 import { Box, Button, FormControl, Input, InputLabel,  OutlinedInput, TextField } from '@mui/material';
 import React from 'react';
 
-const AddExpense = ()=>{
+const UpdateCategory = ()=>{
     return (
         <div className='-z-10 flex items-center justify-center mt-12'>
     <div className=' flex items-center justify-center shadow w-96 border bg-[#f6f7f8] rounded-md text-[#000300]'>
@@ -61,4 +61,4 @@ const AddExpense = ()=>{
         </div>
       )
 }
-export default AddExpense;
+export default UpdateCategory;

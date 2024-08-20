@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DashBoard from '../component/Admin/DashBoard';
-import Home from '../component/Home/Home';
+
 
 
 const AppRoutes = () => {
@@ -10,8 +10,8 @@ const AppRoutes = () => {
       
       <Routes>
        
-      <Route path='/admin' element={<DashBoard/>} />
-      <Route path='/' element={<Home/>} />
+      <Route path='/user_dashboard/*' element={<DashBoard/>} />
+      
       
       </Routes>
     </Router>

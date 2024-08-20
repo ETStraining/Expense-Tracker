@@ -1,15 +1,17 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import All_Expenses from './ExpenseManagement/All_Expenses';
+import {  Routes, Route } from 'react-router-dom';
 import SideBar from '../LayOut/SideBar';
 import Header from '../LayOut/Header';
-import Expense_OverView from './OverView/Expense_OverView';
+import AddUser from './User/AddUser';
 import All_User from './User/All_User';
+import ExpenseOverView from './OverView/Expense_OverView';
+import AllExpense from './ExpenseManagement/All_Expenses';
 import All_Category from './Category/All_Category';
 import All_Income from './Income/All_Incame';
-import AddUser from './User/AddUser';
 import AddIncome from './Income/Add_Income';
 import AddExpense from './ExpenseManagement/AddExpenses';
+import UpdateExpense from './ExpenseManagement/UpdateExpenses';
+import UpdateIncome from './Income/Update_Income';
 
 const DashBoard = () => {
   return (
@@ -18,23 +20,22 @@ const DashBoard = () => {
         <SideBar />
       </div>
       <div className='w-[85%]'>
-      <Header />
-        <div className='mx-8'> 
-        <Routes>
-          <Route path='/' element={<Expense_OverView />} />
-          <Route path='/all_expenses' element={<All_Expenses />} />
-          <Route path='/all_users' element={<All_User />} />
-          <Route path='/category' element={<All_Category />} />
-          <Route path='/income' element={<All_Income />} />
-          <Route path='/add_user' element={<AddUser />} />
-          <Route path='/add_income' element={<AddIncome />} />
-          <Route path='/add_expense' element={<AddExpense />} />
-
-
-          
-        </Routes>
-        </div>
+        <Header />
         
+        <div className='mx-8'>
+          <Routes>
+            <Route path='/' element={ <ExpenseOverView />} />
+            <Route path='/all_expense' element={<AllExpense />} />
+            <Route path='/all_users' element={<All_User />} />
+            <Route path='/category' element={<All_Category />} />
+            <Route path='/income' element={<All_Income />} />
+            <Route path='/add_user' element={<AddUser />} />
+            <Route path='/add_income' element={<AddIncome />} />
+            <Route path='/add_expense' element={<AddExpense />} />
+            <Route path='/update_expense' element={<UpdateExpense />} />
+            <Route path='/update_incame' element={<UpdateIncome />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );
