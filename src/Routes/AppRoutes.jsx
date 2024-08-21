@@ -9,7 +9,7 @@ const AppRoutes = () => {
     <Router>
       
       <Routes>
-       
+       {/* <Route path='/' element={<DashBoard/>} /> */}
       <Route path='/user_dashboard/*' element={<DashBoard/>} />
       
       
