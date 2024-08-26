@@ -23,7 +23,7 @@ const Expense_OverView = () => {
         <div className="flex gap-3 items-center justify-center ml-2  ">
           <div>
             <div className=" mt-3 mb-3 ">
-              <h1 className="text-2xl font-roboto font-bold">Hi,bwiza linda</h1>
+              <h1 className="text-2xl text-[#144c90] font-roboto font-bold">Hi,bwiza linda</h1>
               <p className="font-roboto">
                 Here's what happening with your money. Lets manage your expenses
               </p>
@@ -31,7 +31,7 @@ const Expense_OverView = () => {
             <div className="flex gap-3 ">
               <div className="flex flex-wrap gap-3">
                 <div className="w-60   h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -40,7 +40,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60  h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -49,7 +49,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60  h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">
@@ -58,7 +58,7 @@ const Expense_OverView = () => {
                   </div>
                 </div>
                 <div className="w-60   h-20 rounded-md flex  gap-1  bg-slate-50 shadow-sm">
-                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#2626d8] p-4 rounded-full">
+                  <div className=" text-xl font-roboto font-bold m-3 bg-[#f1f1f1] text-[#a6f9bd] p-4 rounded-full">
                     <IoStatsChartSharp />
                   </div>
                   <div className="m-3">

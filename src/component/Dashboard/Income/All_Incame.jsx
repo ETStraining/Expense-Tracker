@@ -9,18 +9,20 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { MdDelete } from "react-icons/md";
 import { MdModeEditOutline } from "react-icons/md";
-import { IoMdAdd } from 'react-icons/io';
+import { IoMdAdd } from "react-icons/io";
+import { NavLink } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#020725",
-    color: "#dfe1e4",
+    backgroundColor: "#000300",
+    color: "#a6f9bd",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
     color:"#020725"
   },
 }));
+
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
@@ -33,11 +35,11 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-const All_Category = () => {
+const All_Income = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#020725]"> Category Overview</h1>
-      <p className='bg-[#020725] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300] text-3xl font-roboto"> Income Overview</h1>
+     <NavLink to={"/user_dashboard/add_income"}> <p className='text-[#a6f9bd] bg-[#000300]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
       </div>
       <div>
       <TableContainer component={Paper}>
@@ -45,8 +47,9 @@ const All_Category = () => {
         <TableHead>
           <TableRow>
             <StyledTableCell>Id</StyledTableCell>
-            <StyledTableCell>Name</StyledTableCell>
+            <StyledTableCell>Date</StyledTableCell>
             <StyledTableCell >Depertment</StyledTableCell>
+            <StyledTableCell >Amount</StyledTableCell>
             
             <StyledTableCell>Action</StyledTableCell>
           </TableRow>
@@ -57,8 +60,24 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
+              <StyledTableCell>1/1/2024</StyledTableCell>
+              <StyledTableCell >Acounting</StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              
+              <StyledTableCell>
+                 <div className='flex gap-3'>
+               <p><MdModeEditOutline size={30}/></p>
+               <p ><MdDelete size={30}/></p>
+               
+               </div></StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow >
+              <StyledTableCell component="th" scope="row">
+                1
+              </StyledTableCell>
+              <StyledTableCell>1/1/2024</StyledTableCell>
+              <StyledTableCell >Acounting</StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
               
               <StyledTableCell>
               <div className='flex gap-3'>
@@ -72,9 +91,10 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
-
+              <StyledTableCell>1/1/2024</StyledTableCell>
+              <StyledTableCell >Acounting</StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              
               <StyledTableCell>
               <div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
@@ -87,17 +107,19 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
-
+              <StyledTableCell>1/1/2024</StyledTableCell>
+              <StyledTableCell >Acounting</StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              
               <StyledTableCell>
-              <div className='flex gap-3'>
+               <div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
                <p ><MdDelete size={30}/></p>
                
                </div>
               </StyledTableCell>
             </StyledTableRow>
+           
         
              
         
@@ -110,4 +132,4 @@ const All_Category = () => {
   );
 };
 
-export default All_Category;
+export default All_Income;

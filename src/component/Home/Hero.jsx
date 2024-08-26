@@ -25,7 +25,7 @@ const Hero = () => {
           />
         </div>
         <p className='md:text-2xl text-xl font-bold text-gray-500'>for start creating your budget and save ton of money & SASS platforms.</p>
-       <NavLink to={'/admin'}> <button className='bg-[#a6f9bd] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button></NavLink>
+       <NavLink to={'/signup'}> <button className='bg-[#a6f9bd] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button></NavLink>
       </div>
     </div>
   );

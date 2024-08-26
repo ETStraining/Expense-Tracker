@@ -14,15 +14,14 @@ import { NavLink } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: "#020725",
-    color: "#dfe1e4",
+    backgroundColor: "#000300",
+    color: "#a6f9bd",
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    color:"#020725"
+    color:"#000300"
   },
 }));
-
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
@@ -35,11 +34,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-const All_Income = () => {
+const All_Expenses = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#020725]"> Income Overview</h1>
-     <NavLink to={"/add_income"}> <p className='text-[#dfe1e4] bg-[#020725]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className=" text-3xl font-roboto"> Expenses Overview</h1>
+      <NavLink to={"/user_dashboard/add_expense"}><p className='bg-[#000300] text-[#a6f9bd] p-2 rounded-sm'><IoMdAdd/></p>
+      </NavLink>
       </div>
       <div>
       <TableContainer component={Paper}>
@@ -48,9 +48,8 @@ const All_Income = () => {
           <TableRow>
             <StyledTableCell>Id</StyledTableCell>
             <StyledTableCell>Date</StyledTableCell>
-            <StyledTableCell >Depertment</StyledTableCell>
-            <StyledTableCell >Amount</StyledTableCell>
-            
+            <StyledTableCell align="right">Amount&nbsp;($)</StyledTableCell>
+            <StyledTableCell>Category</StyledTableCell>
             <StyledTableCell>Action</StyledTableCell>
           </TableRow>
         </TableHead>
@@ -60,12 +59,40 @@ const All_Income = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>1/1/2024</StyledTableCell>
-              <StyledTableCell >Acounting</StyledTableCell>
-              <StyledTableCell >Amount</StyledTableCell>
-              
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
               <StyledTableCell>
-                 <div className='flex gap-3'>
+              <div className='flex gap-3'>
+               <p><MdModeEditOutline size={30}/></p>
+               <p ><MdDelete size={30}/></p>
+               
+               </div>
+              </StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow >
+              <StyledTableCell component="th" scope="row">
+                1
+              </StyledTableCell>
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
+              <StyledTableCell>
+              <div className='flex gap-3'>
+               <p><MdModeEditOutline size={30}/></p>
+               <p ><MdDelete size={30}/></p>
+               
+               </div>
+              </StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow >
+              <StyledTableCell component="th" scope="row">
+                1
+              </StyledTableCell>
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
+              <StyledTableCell><div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
                <p ><MdDelete size={30}/></p>
                
@@ -75,53 +102,15 @@ const All_Income = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>1/1/2024</StyledTableCell>
-              <StyledTableCell >Acounting</StyledTableCell>
-              <StyledTableCell >Amount</StyledTableCell>
-              
-              <StyledTableCell>
-              <div className='flex gap-3'>
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
+              <StyledTableCell><div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
                <p ><MdDelete size={30}/></p>
                
-               </div>
-              </StyledTableCell>
+               </div></StyledTableCell>
             </StyledTableRow>
-            <StyledTableRow >
-              <StyledTableCell component="th" scope="row">
-                1
-              </StyledTableCell>
-              <StyledTableCell>1/1/2024</StyledTableCell>
-              <StyledTableCell >Acounting</StyledTableCell>
-              <StyledTableCell >Amount</StyledTableCell>
-              
-              <StyledTableCell>
-              <div className='flex gap-3'>
-               <p><MdModeEditOutline size={30}/></p>
-               <p ><MdDelete size={30}/></p>
-               
-               </div>
-              </StyledTableCell>
-            </StyledTableRow>
-            <StyledTableRow >
-              <StyledTableCell component="th" scope="row">
-                1
-              </StyledTableCell>
-              <StyledTableCell>1/1/2024</StyledTableCell>
-              <StyledTableCell >Acounting</StyledTableCell>
-              <StyledTableCell >Amount</StyledTableCell>
-              
-              <StyledTableCell>
-               <div className='flex gap-3'>
-               <p><MdModeEditOutline size={30}/></p>
-               <p ><MdDelete size={30}/></p>
-               
-               </div>
-              </StyledTableCell>
-            </StyledTableRow>
-           
-        
-             
         
         </TableBody>
       </Table>
@@ -132,4 +121,4 @@ const All_Income = () => {
   );
 };
 
-export default All_Income;
+export default All_Expenses;

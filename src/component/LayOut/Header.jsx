@@ -4,15 +4,16 @@ import { FaSearch } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import { MdInfoOutline } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <div className="flex justify-between items-center   w-full z-30  px-8 mt-3 text-[#020725] top-0 sticky mb-0 pb-0">
+      <div className="flex justify-between items-center   w-full z-30  px-8 mt-3 text-[#000300] top-0 sticky mb-0 pb-0 bg-[#e7edfa]">
         
         <div className="font-roboto">
           <p>Pages/Dashboard</p>
-          <p className="text-3xl font-roboto font-bold">Main DashBoard</p>
+          <p className="text-3xl font-roboto text-[#144c90] font-bold">Main DashBoard</p>
         </div>
         <div className="m-1  lg:bg-slate-50 lg:w-80  rounded-3xl h-14 flex gap-3" >
         
@@ -24,10 +25,12 @@ const Header = () => {
         <p className="flex text-xl  items-center"><FaMoon/></p>
        
         <p className="flex text-xl  items-center"><MdInfoOutline/></p>
-        <p className="flex text-5xl  items-center">
+      <NavLink to={'/user_dashboard/account-settings'}>
+      <p className="flex text-5xl  items-center">
             <IoPersonCircle />
             
           </p>
+      </NavLink>
         
         </div>
       </div>
