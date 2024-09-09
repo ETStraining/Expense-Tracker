@@ -19,7 +19,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
-    color:"#000300"
+    color:"#020725"
   },
 }));
 
@@ -38,8 +38,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const All_Income = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300]"> Income Overview</h1>
-     <NavLink to={"/user_dashboard/add_income"}> <p className='text-[#dfe1e4] bg-[#000300]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300] text-3xl font-roboto"> Income Overview</h1>
+     <NavLink to={"/user_dashboard/add_income"}> <p className='text-[#a6f9bd] bg-[#000300]  p-2 rounded-sm'><IoMdAdd/></p></NavLink>
       </div>
       <div>
       <TableContainer component={Paper}>

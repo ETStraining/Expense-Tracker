@@ -12,8 +12,10 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
+    "@fontsource/mulish": "^5.0.19",
     "@fontsource/poppins": "^5.0.14",
     "@fontsource/roboto": "^5.0.14",
+    "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "chart.js": "^4.4.3",
     "formik": "^2.4.6",

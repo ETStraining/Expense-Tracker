@@ -9,7 +9,8 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { MdDelete } from "react-icons/md";
 import { MdModeEditOutline } from "react-icons/md";
-import { IoMdAdd } from 'react-icons/io';
+import { IoMdAdd } from "react-icons/io";
+import { NavLink } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -33,11 +34,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 
-const All_Category = () => {
+const All_Expenses = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300]"> Category Overview</h1>
-      <p className='bg-[#000300] text-[#dfe1e4] p-2 rounded-sm'><IoMdAdd/></p>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className=" text-3xl font-roboto"> Expenses Overview</h1>
+      <NavLink to={"/user_dashboard/add_expense"}><p className='bg-[#000300] text-[#a6f9bd] p-2 rounded-sm'><IoMdAdd/></p>
+      </NavLink>
       </div>
       <div>
       <TableContainer component={Paper}>
@@ -45,9 +47,9 @@ const All_Category = () => {
         <TableHead>
           <TableRow>
             <StyledTableCell>Id</StyledTableCell>
-            <StyledTableCell>Name</StyledTableCell>
-            <StyledTableCell >Depertment</StyledTableCell>
-            
+            <StyledTableCell>Date</StyledTableCell>
+            <StyledTableCell align="right">Amount&nbsp;($)</StyledTableCell>
+            <StyledTableCell>Category</StyledTableCell>
             <StyledTableCell>Action</StyledTableCell>
           </TableRow>
         </TableHead>
@@ -57,9 +59,9 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
-              
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
               <StyledTableCell>
               <div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
@@ -72,9 +74,9 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
-
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
               <StyledTableCell>
               <div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
@@ -87,19 +89,28 @@ const All_Category = () => {
               <StyledTableCell component="th" scope="row">
                 1
               </StyledTableCell>
-              <StyledTableCell>John Willy</StyledTableCell>
-              <StyledTableCell >John@gmail.com</StyledTableCell>
-
-              <StyledTableCell>
-              <div className='flex gap-3'>
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
+              <StyledTableCell><div className='flex gap-3'>
                <p><MdModeEditOutline size={30}/></p>
                <p ><MdDelete size={30}/></p>
                
-               </div>
-              </StyledTableCell>
+               </div></StyledTableCell>
             </StyledTableRow>
-        
-             
+            <StyledTableRow >
+              <StyledTableCell component="th" scope="row">
+                1
+              </StyledTableCell>
+              <StyledTableCell>23/4/2024</StyledTableCell>
+              <StyledTableCell align="right">10$</StyledTableCell>
+              <StyledTableCell>Material</StyledTableCell>
+              <StyledTableCell><div className='flex gap-3'>
+               <p><MdModeEditOutline size={30}/></p>
+               <p ><MdDelete size={30}/></p>
+               
+               </div></StyledTableCell>
+            </StyledTableRow>
         
         </TableBody>
       </Table>
@@ -110,4 +121,4 @@ const All_Category = () => {
   );
 };
 
-export default All_Category;
+export default All_Expenses;

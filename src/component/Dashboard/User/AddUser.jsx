@@ -58,7 +58,7 @@ const AddUser = ()=>{
             </FormControl>
          
             <FormControl>
-               <button type='submit' className='text-[#] bg-[#000300] p-2 rounded-md' variant='contained'>AddUser</button>
+               <button type='submit' className='text-[#000300] bg-[#a6f9bd] p-2 rounded-md' variant='contained'>AddUser</button>
             </FormControl>
            
           

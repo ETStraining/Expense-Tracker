@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@fontsource/roboto/400.css';
-@import '@fontsource/roboto/700.css';
-@import '@fontsource/poppins/400.css';
-@import '@fontsource/poppins/700.css';
+@import '@fontsource/mulish'; /* Defaults to weight 400 */
+@import '@fontsource/mulish/700.css'
 body{
   /* background-color: #070811; */
-  background-color:  #f3f4f6;
+  background-color:  #e7edfa;
   
 
 }

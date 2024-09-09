@@ -1,12 +1,12 @@
 import { Box, Button, FormControl, Input, InputLabel,  OutlinedInput, TextField } from '@mui/material';
 import React from 'react';
 
-const AddCategory = ()=>{
+const AddIncome = ()=>{
     return (
         <div className='-z-10 flex items-center justify-center mt-12'>
     <div className=' flex items-center justify-center shadow w-96 border bg-[#f6f7f8] rounded-md text-[#000300]'>
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 ,width:300 ,margin:5}}>
-        <p className='mt-2 mb-2 text-2xl font-bold'>ADD EXPENSE</p>
+        <p className='mt-2 mb-2 text-2xl font-bold'>ADD INCOME</p>
            <FormControl fullWidth required variant="outlined">
             <InputLabel htmlFor="date" sx={{ color: "#dfe1e4" }}></InputLabel>
               <OutlinedInput
@@ -49,7 +49,7 @@ const AddCategory = ()=>{
             
          
             <FormControl>
-               <button type='submit' className='text-[#a6f9bd] bg-[#000300] p-2 rounded-md' variant='contained'>AddIncome</button>
+               <button type='submit' className='text-[#000300] bg-[#a6f9bd] p-2 rounded-md' variant='contained'>AddIncome</button>
             </FormControl>
            
           
@@ -61,4 +61,4 @@ const AddCategory = ()=>{
         </div>
       )
 }
-export default AddCategory;
+export default AddIncome;

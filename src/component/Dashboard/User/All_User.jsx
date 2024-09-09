@@ -37,7 +37,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const All_User = () => {
   return (
     <div className=''>
-      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300]"> User Overview</h1>
+      <div className='flex justify-between items-center mt-3 mb-3'> <h1 className="text-[#000300] text-3xl font-roboto"> User Overview</h1>
       <NavLink to={"/user_dashboard/add_user"}><p className='text-[#000300]'><IoIosPersonAdd size={30}/></p></NavLink>
       </div>
       <div>

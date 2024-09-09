@@ -27,7 +27,7 @@ const BarCharts = ({ data }) => {
             {
                 label: 'Profit ($)',
                 data: data.map(item => item.profit),
-                backgroundColor: 'rgba(29, 228, 18,0.3)',
+                backgroundColor: 'rgba(29, 228, 18,0.8)',
                 borderColor: 'rgba(70, 200, 200, 1)',
                 borderWidth: 1,
             },

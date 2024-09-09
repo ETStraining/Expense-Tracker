@@ -5,7 +5,7 @@ const ExpenseBar = ({ spent, remaining, total }) => {
 
   return (
     <div className="m-5">
-      <div className="flex text-sm font-roboto justify-between mb-1">
+      <div className="flex text-sm font-mulish justify-between mb-1">
         <span>{spent}MRwf Spent</span>
         <span>{remaining}MRwf Remaining</span>
       </div>

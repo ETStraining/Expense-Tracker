@@ -7,10 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-        helvetica: ['Helvetica', 'Arial', 'sans-serif'],
-        georgia: ['Georgia', 'Times New Roman', 'serif'],
+        mulish: ['Mulish', 'sans-serif'],
+
       },
     },
   },
